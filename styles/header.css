@@ -2,6 +2,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 2;
   background-color: #2c2c2c; }
   .header__container {
     display: -webkit-box;
@@ -71,7 +72,8 @@
         z-index: 1; } }
   @media (max-width: 1070px) {
     .header {
-      position: static; } }
+      position: static;
+      z-index: 0; } }
 
 .header-navbar__list {
   display: -webkit-box;
@@ -93,10 +95,10 @@
       background-color: #2060f6;
       -webkit-transform: translateY(-100%);
               transform: translateY(-100%);
-      -webkit-transition: -webkit-transform 1s ease-in-out;
-      transition: -webkit-transform 1s ease-in-out;
-      transition: transform 1s ease-in-out;
-      transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; } }
+      -webkit-transition: -webkit-transform 0.4s ease-in-out;
+      transition: -webkit-transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; } }
 
 .header-navbar__item {
   position: relative;
