@@ -18,6 +18,10 @@
   .button:hover {
     background-color: #fff;
     color: #2060f6; }
+  .button:focus {
+    background-color: #fff;
+    color: #2060f6;
+    outline: none; }
 
 .arrow-btn {
   position: relative;
@@ -55,7 +59,10 @@
     font-size: 15px;
     line-height: 22px;
     -webkit-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out; }
+    transition: color 0.3s ease-in-out;
+    outline: none; }
+    .arrow-btn__link:focus {
+      color: #2060f6; }
 
 .btn-block {
   display: -webkit-box;

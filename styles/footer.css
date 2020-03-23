@@ -26,6 +26,15 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+  .footer__logo {
+    outline: none;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+    .footer__logo:focus {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
 
 .footer-navbar__list {
   display: -webkit-box;
@@ -52,6 +61,7 @@
   line-height: 150%;
   letter-spacing: 3px;
   color: #fff;
+  outline: none;
   text-transform: uppercase;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
@@ -75,6 +85,8 @@
     .footer-navbar__link:hover::after {
       -webkit-transform: translateX(10px);
               transform: translateX(10px); }
+  .footer-navbar__link:focus {
+    color: #2060f6; }
 
 @media (max-width: 600px) {
   .footer-navbar {
